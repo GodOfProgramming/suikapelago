@@ -254,7 +254,7 @@ const Game = {
 
         // Uh oh, too high!
         if (aY < Game.loseHeight || bY < Game.loseHeight) {
-          if (this.deathLink) {
+          if (Game.deathLink) {
             apClient.deathLink.sendDeathLink(apClient.name, `${apClient.name} topped out!`);
           }
           Game.loseGame();
